@@ -1,4 +1,4 @@
-// API URL configuration - automatically uses the correct backend URL based on environment
+﻿// API URL configuration - automatically uses the correct backend URL based on environment
 const API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:3000' 
     : 'https://dentalclinic-cp54.onrender.com';
@@ -63,7 +63,7 @@ function validateForm(formElement) {
 }
 
 // Handle booking form submission
-const bookingForm = document.querySelector('.booking-form');
+const bookingForm = document.getElementById('booking-form');
 if (bookingForm) {
     bookingForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -97,7 +97,7 @@ if (bookingForm) {
 }
 
 // Handle contact form submission
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
