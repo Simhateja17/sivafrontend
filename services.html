@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Lotus Dental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-12 w-auto" src="images/lotus-dental-logo.png" alt="Lotus Dental">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="booking.html" class="btn-primary">Book Appointment</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-blue-600">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="images/dental-services.jpg" alt="Dental Services">
+            <div class="absolute inset-0 bg-blue-600 mix-blend-multiply"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Our Services</h1>
+            <p class="mt-6 text-xl text-white max-w-3xl">
+                Comprehensive dental care services tailored to meet your needs. From routine check-ups to advanced procedures, we're here to help you maintain a healthy, beautiful smile.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 md:grid-cols-2">
+                <!-- Preventive Dentistry -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/preventive-care.jpg" alt="Preventive Dental Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Preventive Dentistry</h3>
+                        <p class="mt-2 text-gray-600">
+                            Regular check-ups and cleanings to maintain oral health and prevent dental problems.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Dental Check-ups</li>
+                            <li>• Professional Cleaning</li>
+                            <li>• Fluoride Treatment</li>
+                            <li>• Dental Sealants</li>
+                        </ul>
+                        <a href="booking.html?service=preventive" class="mt-6 inline-block btn-primary">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Restorative Dentistry -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/restorative-care.jpg" alt="Restorative Dental Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Restorative Dentistry</h3>
+                        <p class="mt-2 text-gray-600">
+                            Repair damaged teeth and restore your smile's functionality and appearance.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Dental Fillings</li>
+                            <li>• Crowns and Bridges</li>
+                            <li>• Root Canal Treatment</li>
+                            <li>• Dental Implants</li>
+                        </ul>
+                        <a href="booking.html?service=restorative" class="mt-6 inline-block btn-primary">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cosmetic Dentistry -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/cosmetic-care.jpg" alt="Cosmetic Dental Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Cosmetic Dentistry</h3>
+                        <p class="mt-2 text-gray-600">
+                            Enhance your smile's appearance with our cosmetic dental procedures.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Teeth Whitening</li>
+                            <li>• Dental Veneers</li>
+                            <li>• Cosmetic Bonding</li>
+                            <li>• Smile Makeover</li>
+                        </ul>
+                        <a href="booking.html?service=cosmetic" class="mt-6 inline-block btn-primary">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Orthodontics -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/orthodontics.jpg" alt="Orthodontic Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Orthodontics</h3>
+                        <p class="mt-2 text-gray-600">
+                            Straighten your teeth and improve your bite with our orthodontic treatments.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Traditional Braces</li>
+                            <li>• Clear Aligners</li>
+                            <li>• Retainers</li>
+                            <li>• Early Intervention</li>
+                        </ul>
+                        <a href="booking.html?service=orthodontics" class="mt-6 inline-block btn-primary">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pediatric Dentistry -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/pediatric-care.jpg" alt="Pediatric Dental Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Pediatric Dentistry</h3>
+                        <p class="mt-2 text-gray-600">
+                            Specialized dental care for children in a friendly, comfortable environment.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Child Check-ups</li>
+                            <li>• Gentle Cleanings</li>
+                            <li>• Cavity Prevention</li>
+                            <li>• Emergency Care</li>
+                        </ul>
+                        <a href="booking.html?service=pediatric" class="mt-6 inline-block btn-primary">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Emergency Dental Care -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="images/emergency-care.jpg" alt="Emergency Dental Care">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Emergency Care</h3>
+                        <p class="mt-2 text-gray-600">
+                            Immediate dental care for accidents, injuries, and severe pain.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li>• Toothache Relief</li>
+                            <li>• Broken Tooth Repair</li>
+                            <li>• Emergency Extractions</li>
+                            <li>• 24/7 Support</li>
+                        </ul>
+                        <div class="mt-6 space-y-2">
+                            <a href="booking.html?service=emergency" class="inline-block btn-primary w-full">
+                                Book Appointment
+                            </a>
+                            <p class="text-sm text-red-600 font-medium">
+                                For immediate assistance, call: (044) 1234-5678
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Why Choose Lotus Dental?</h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Experience the difference with our comprehensive dental care approach.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Experienced Team</h3>
+                            <p class="mt-2 text-gray-500">
+                                Our dentists have years of experience and continuous training in the latest techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Modern Facility</h3>
+                            <p class="mt-2 text-gray-500">
+                                State-of-the-art equipment and technology for precise diagnostics and treatment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Patient Comfort</h3>
+                            <p class="mt-2 text-gray-500">
+                                We prioritize your comfort and provide a relaxing environment for all procedures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-300">     First Floor, 5-368, beside Union bank<br>PJR Colony, Deepthisri Nagar<br>Madeenaguda, Hyderabad, Telangana 500049<br>Phone: +91 9885402421<br>Email: ugrarapusivaprathap@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-300 hover:text-white">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Hours</h3>
+                    <p class="text-gray-300">
+                        Monday - Sunday: 9:00 AM - 9:00 PM<br>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8">
+                <p class="text-center text-gray-400">&copy; 2024 Lotus Dental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

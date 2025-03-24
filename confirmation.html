@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmed - Lotus Dental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-12 w-auto" src="images/lotus-dental-logo.png" alt="Lotus Dental">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="booking.html" class="btn-primary">Book Appointment</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Confirmation Section -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8 text-center">
+            <div>
+                <div class="mx-auto flex items-center justify-center h-24 w-24 rounded-full bg-green-100">
+                    <svg class="h-16 w-16 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                </div>
+                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
+                    Appointment Confirmed!
+                </h2>
+                <p class="mt-2 text-lg text-gray-600">
+                    Thank you for choosing Lotus Dental. Your appointment has been successfully scheduled.
+                </p>
+            </div>
+
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4">
+                        Appointment Details
+                    </h3>
+                    <div class="mt-2 text-left">
+                        <dl class="space-y-4">
+                            <div class="appointment-date">
+                                <dt class="text-sm font-medium text-gray-500">Date & Time</dt>
+                                <dd class="mt-1 text-lg text-gray-900" id="appointmentDateTime">Loading...</dd>
+                            </div>
+                            <div class="appointment-service">
+                                <dt class="text-sm font-medium text-gray-500">Service</dt>
+                                <dd class="mt-1 text-lg text-gray-900" id="appointmentService">Loading...</dd>
+                            </div>
+                            <div class="appointment-location">
+                                <dt class="text-sm font-medium text-gray-500">Location</dt>
+                                <dd class="mt-1 text-lg text-gray-900">
+                                    First Floor, 5-368, beside Union bank<br>PJR Colony, Deepthisri Nagar<br>Madeenaguda, Hyderabad, Telangana 500049
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6 text-left">
+                <h3 class="text-lg font-medium text-blue-900 mb-2">Important Reminders</h3>
+                <ul class="text-sm text-blue-700 space-y-2">
+                    <li>• Please arrive 15 minutes before your scheduled appointment time</li>
+                    <li>• Bring any relevant medical records or x-rays</li>
+                    <li>• If you need to reschedule, please give us at least 24 hours notice</li>
+                    <li>• A confirmation email has been sent to your registered email address</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <a href="/" class="btn-primary inline-block w-full">
+                    Return to Home
+                </a>
+                <button onclick="window.print()" class="btn-secondary inline-block w-full">
+                    Print Confirmation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-300">First Floor, 5-368, beside Union bank<br>PJR Colony, Deepthisri Nagar<br>Madeenaguda, Hyderabad, Telangana 500049<br>Phone: +91 9885402421<br>Email: ugrarapusivaprathap@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-300 hover:text-white">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Hours</h3>
+                    <p class="text-gray-300">
+                        Monday - Sunday: 9:00 AM - 9:00 PM<br>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8">
+                <p class="text-center text-gray-400">&copy; 2024 Lotus Dental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Get appointment details from URL parameters
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const date = params.get('date');
+            const time = params.get('time');
+            const service = params.get('service');
+
+            if (date && time) {
+                const formattedDate = new Date(date + 'T' + time).toLocaleString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric'
+                });
+                document.getElementById('appointmentDateTime').textContent = formattedDate;
+            }
+
+            if (service) {
+                const formattedService = service
+                    .split('-')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+                document.getElementById('appointmentService').textContent = formattedService;
+            }
+        });
+    </script>
+</body>
+</html>

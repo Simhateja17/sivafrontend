@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Lotus Dental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-12 w-auto" src="images/lotus-dental-logo.png" alt="Lotus Dental">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="booking.html" class="nav-link active btn-primary">Book Appointment</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <div class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Book Your Appointment</h1>
+                <p class="mt-4 text-lg text-gray-500">
+                    Schedule your visit with our experienced dental professionals.
+                </p>
+            </div>
+
+            <div class="mt-12 bg-white shadow-lg rounded-lg p-8">
+                <form class="booking-form space-y-6">
+                    <!-- Personal Information -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Personal Information</h2>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" name="name" id="name" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" name="email" id="email" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                <input type="tel" name="phone" id="phone" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
+                                <input type="number" name="age" id="age" min="1" max="120"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Details -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Appointment Details</h2>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="date" class="block text-sm font-medium text-gray-700">Preferred Date</label>
+                                <input type="date" name="date" id="date" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                            </div>
+
+                            <div>
+                                <label for="time" class="block text-sm font-medium text-gray-700">Preferred Time</label>
+                                <select name="time" id="time" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                                    <option value="">Select a time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="service" class="block text-sm font-medium text-gray-700">Service Required</label>
+                                <select name="service" id="service" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                                    <option value="">Select a service</option>
+                                    <option value="general-checkup">General Check-up</option>
+                                    <option value="cleaning">Teeth Cleaning</option>
+                                    <option value="whitening">Teeth Whitening</option>
+                                    <option value="filling">Dental Filling</option>
+                                    <option value="root-canal">Root Canal Treatment</option>
+                                    <option value="extraction">Tooth Extraction</option>
+                                    <option value="crown">Dental Crown</option>
+                                    <option value="braces">Braces Consultation</option>
+                                    <option value="implant">Dental Implant Consultation</option>
+                                </select>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="notes" class="block text-sm font-medium text-gray-700">Additional Notes</label>
+                                <textarea name="notes" id="notes" rows="3"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                    placeholder="Please mention any specific concerns or requirements"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="relative flex items-start">
+                        <div class="flex items-center h-5">
+                            <input type="checkbox" id="terms" name="terms" required
+                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="terms" class="font-medium text-gray-700">I agree to the terms and conditions</label>
+                            <p class="text-gray-500">By scheduling an appointment, you agree to our cancellation policy and privacy policy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="btn-primary w-full">
+                            Schedule Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mt-8 bg-blue-50 rounded-lg p-6">
+                <h3 class="text-lg font-medium text-blue-900">Important Information</h3>
+                <ul class="mt-4 text-sm text-blue-700 space-y-2">
+                    <li>• Please arrive 15 minutes before your scheduled appointment time.</li>
+                    <li>• Bring any relevant medical records or x-rays.</li>
+                    <li>• 24-hour notice is required for cancellations.</li>
+                    <li>• Emergency appointments are available, please call us directly.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-16">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-300">123 Dental Street<br>     First Floor, 5-368, beside Union bank<br>PJR Colony, Deepthisri Nagar<br>Madeenaguda, Hyderabad, Telangana 500049 <br>Phone: +91 9885402421 <br>Email: ugrarapusivaprathap@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="booking.html" class="text-gray-300 hover:text-white">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Hours</h3>
+                    <p class="text-gray-300">
+                        Monday - Friday: 9:00 AM - 7:00 PM<br>
+                        Saturday: 9:00 AM - 5:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8">
+                <p class="text-center text-gray-400">&copy; 2024 Lotus Dental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
