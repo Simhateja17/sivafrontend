@@ -1,3 +1,8 @@
+// API URL configuration - automatically uses the correct backend URL based on environment
+const API_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000' 
+    : 'https://dentalclinic-cp54.onrender.com';
+
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
@@ -14,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="services.html" class="nav-link block px-3 py-2">Services</a>
                 <a href="contact.html" class="nav-link block px-3 py-2">Contact</a>
                 <a href="booking.html" class="btn-primary block text-center mt-4">Book Appointment</a>
+
             </div>
         `;
         mobileMenu.style.display = 'none';
@@ -35,7 +41,7 @@ function validateForm(formElement) {
         if (input.hasAttribute('required') && !input.value.trim()) {
             isValid = false;
             input.classList.add('border-red-500');
-            
+
             // Create or update error message
             let errorMsg = input.nextElementSibling;
             if (!errorMsg || !errorMsg.classList.contains('error-message')) {
@@ -61,14 +67,14 @@ const bookingForm = document.querySelector('.booking-form');
 if (bookingForm) {
     bookingForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         if (!validateForm(bookingForm)) return;
 
         const formData = new FormData(bookingForm);
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('http://localhost:3000/api/appointments', {
+            const response = await fetch(`${API_URL}/api/appointments`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -77,7 +83,7 @@ if (bookingForm) {
             });
 
             const result = await response.json();
-            
+
             if (result.success) {
                 window.location.href = 'confirmation.html';
             } else {
@@ -95,14 +101,14 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         if (!validateForm(contactForm)) return;
 
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('http://localhost:3000/api/contact', {
+            const response = await fetch(`${API_URL}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -111,7 +117,7 @@ if (contactForm) {
             });
 
             const result = await response.json();
-            
+
             if (result.success) {
                 alert('Thank you for your message. We will get back to you soon!');
                 contactForm.reset();
@@ -123,4 +129,4 @@ if (contactForm) {
             alert('An error occurred. Please try again later.');
         }
     });
-}
+} 
